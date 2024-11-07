@@ -1,0 +1,19 @@
+[package]
+name = "sol_aggregator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true }
+url = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+tokio = { workspace = true }
+flume = { workspace = true }
+solana-client = { workspace = true }
+
+sol_account_collector = { path = "../sol_account_collector" }
+sol_tx_collector = { path = "../sol_tx_collector" }
+sol_db = { path = "../sol_db" }
+sol_rest_api = { path = "../sol_rest_api" }

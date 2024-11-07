@@ -1,0 +1,15 @@
+[package]
+name = "sol_rest_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+actix-web = { workspace = true }
+
+sol_db = { path = "../sol_db" }

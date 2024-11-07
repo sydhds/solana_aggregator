@@ -1,0 +1,30 @@
+[workspace]
+members = [
+    "sol_db",
+    "sol_rest_api",
+    "sol_tx_collector",
+    "sol_account_collector",
+    "sol_aggregator"
+]
+
+resolver = "2"
+
+[workspace.dependencies]
+futures-util = "0.3.30"
+tokio = { version = "1.36.0" , features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+flume = "0.11"
+chrono = "0.4"
+serde = "1.0"
+serde_json = "1.0"
+url = { version = "2.5.0", features = ["serde"] }
+clap = { version = "4.5", features = ["derive", "cargo"] }
+anyhow = "1.0"
+solana-client = "2.0"
+solana-transaction-status = "2.0"
+solana-sdk = "2.0"
+actix-web = "4.8"
+diesel = { version = "2", features = ["sqlite", "r2d2", "uuid", "chrono"] }
+schnellru = "0.2"
+

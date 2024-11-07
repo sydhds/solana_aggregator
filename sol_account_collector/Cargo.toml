@@ -1,0 +1,17 @@
+[package]
+name = "sol_account_collector"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+schnellru = { workspace = true }
+tokio = { workspace = true }
+futures-util = { workspace = true }
+flume = { workspace = true }
+solana-client = { workspace = true }
+solana-sdk = { workspace = true }
+
+sol_db = { path = "../sol_db" }
